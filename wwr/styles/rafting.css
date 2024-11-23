@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #134266;
+    --secondary-color: #78c5d7;
+    --accent1-color: #000000;
+    --accent2-color: #fce172;
+}
+
+body {
+    max-width: 800px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.hero h1 {
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    background-color: #134266b5;
+    width: 100%;
+    color: white;
+}
+
+.hero article {
+    position: absolute;
+    background-color: #000000c8;
+    color: white;
+    top: 200px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.hero article img {
+    float: right;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sefif;
+    color: var(--accent1-color);
+}
+
+p {
+    font-family: 'Montserrat', serif;
+}
+
+footer a {
+    text-decoration: none;
+}
