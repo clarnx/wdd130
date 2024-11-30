@@ -77,6 +77,7 @@ footer p {
 footer div {
     display: flex;
     grid-column: 3/4;
+    align-items: center;
     justify-content: flex-end;
     width: 100%;
     gap: 10px;
