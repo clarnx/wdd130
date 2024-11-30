@@ -3,21 +3,27 @@
     --secondary-color: #78c5d7;
     --accent1-color: #000000;
     --accent2-color: #fce172;
+    --container-padding: 10px 50px 10px 50px;
+    --section-margin: 50px 0px 50px 0px
 }
 
-body {
-    max-width: 800px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .hero {
     position: relative;
     width: 100%;
+
 }
 
 .hero img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 500px;
+    object-fit: cover;
 }
 .hero h1 {
     position: absolute;
@@ -58,6 +64,9 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
     align-items: center;
+    padding: var(--container-padding);
+    margin: 90px 0px 0px 0px;
+    background-color: var(--accent2-color);
 }
 
 footer p {
@@ -71,15 +80,15 @@ footer div {
     justify-content: flex-end;
     width: 100%;
     gap: 10px;
-
 }
 
 footer a {
     text-decoration: none;
+   
 }
 
 footer img {
-    width: 20px;
+    width: 30px;
     height: auto;
 }
 
@@ -88,16 +97,22 @@ header {
     grid-template-columns: 1fr 1fr;
     place-items: center;
     align-items: center;
+    padding: var(--container-padding);
+    background-color: var(--accent2-color);
 }
 
 nav {
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    
 }
 
 nav a {
-    margin: 0 10px 0 10px
+    font-family: 'Oswald', sefif;
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 header img {
@@ -117,6 +132,8 @@ h2 {
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
+    padding: var(--container-padding);
+    margin: var(--section-margin);
 }
 
 .history img {
@@ -125,7 +142,7 @@ h2 {
     align-items: center;
     grid-column: 2/3;
     grid-row: 2/2;
-    width: 200px;
+    width: 300px;
 }
 
 .history p {
@@ -141,6 +158,8 @@ h2 {
     justify-content: space-between;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
+    padding: var(--container-padding);
+    margin: var(--section-margin);
 }
 
 .adventure-section h2 {
@@ -151,13 +170,13 @@ h2 {
 
 .adventure-section figure {
     width: 100%;
-    height: auto;
+    height: 200px;
     text-align: center;
 }
 
 .adventure-section img {
     width: 100%;
-    height: auto;
-    object-fit:cover;    
+    height: 200px;
+    object-fit: cover;    
 }
 
