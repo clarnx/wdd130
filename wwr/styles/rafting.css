@@ -85,7 +85,6 @@ footer div {
 
 footer a {
     text-decoration: none;
-   
 }
 
 footer img {
@@ -94,8 +93,8 @@ footer img {
 }
 
 header {
-    display: flex;
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: auto 1fr;
     place-items: center;
     align-items: center;
     padding: var(--container-padding);
